@@ -35,6 +35,8 @@ const NewIssuePage = () => {
     } catch (error) {
       setIsSubmitting(false);
       setError("An unexpected error occured!");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
